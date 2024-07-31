@@ -38,3 +38,11 @@ function detectarPalindromo(palavra) {
         console.log(`A palavra "${palavra}" não é um palíndromo.`)
     }
 }
+
+function ordenarNumeros(a, b, c) {
+    const numerosOrdenados = [a, b, c];
+    numerosOrdenados.sort(function(x, y) {return x - y });
+    console.log(`Números ordenados: ${numerosOrdenados}`);
+}
+
+ordenarNumeros(6,2,2);
