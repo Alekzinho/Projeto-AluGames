@@ -20,7 +20,21 @@ function alterarStatus(id) {
     contarJogosAlugados();
 }
 
-function contarJogosAlugados () {
+function contarJogosAlugados() {
     let jogosAlugados = document.querySelectorAll('.dashboard__item__img--rented').length;
     console.log(`Você possui ${jogosAlugados} jogos alugados.`);
+}
+
+detectarPalindromo("esse");
+
+function detectarPalindromo(palavra) {
+    let separandoLetras = palavra.split("");
+    let palavraInvertida = separandoLetras.reverse("");
+    palavraInvertida = palavraInvertida.join("");
+
+    if (palavra == palavraInvertida) {
+        console.log(`A palavra "${palavra}" é um palíndromo.`)
+    } else {
+        console.log(`A palavra "${palavra}" não é um palíndromo.`)
+    }
 }
